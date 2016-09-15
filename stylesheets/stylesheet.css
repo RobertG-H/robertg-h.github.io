@@ -266,7 +266,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  /*max-width: 640px;*/
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -285,6 +285,12 @@ Full-Width Styles
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
+
+#name_banner{
+  position: absolute;
+  color: #ffffff;
+  top:0;
+ }
 
 #header_wrap {
   background: #212121;
