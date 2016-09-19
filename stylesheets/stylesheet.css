@@ -51,6 +51,11 @@ max-width: 960px;
     color: #fff;
 }
 
+
+#header-name:hover {
+    color: #aaa;
+}
+
 /*about me, experience, projects etc*/
 #navItem {
     float: left;
@@ -60,6 +65,15 @@ max-width: 960px;
     padding-left: 25px;
     color: #fff;
 }
+
+
+
+#navItem:hover {
+    color: #aaa;
+}
+
+
+
 #navItem:nth-child(2){
 }
 /*
@@ -162,12 +176,14 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: #9ab;
+    color: #aaa;
+    text-decoration: none;
 }
 
 /* selected link */
 a:active {
-    color: #9ab;
+    color: #aaa;
+    text-decoration: none;
 }
 
 
@@ -176,7 +192,7 @@ a:active {
 
 .second-big{
   
-  height: 580px;
+  height: 670px;
 
   display:block;
   width: 100%;

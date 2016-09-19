@@ -1,6 +1,9 @@
 function scrollToSection(sec) {
-	//var scroll = $('#'+sec+'Sec').offset().top;
-	$('body').animate({
+	console.log("test");
+	var scroll = $('#'+sec).offset().top;
+	$('body').animate(
+	{
 		scrollTop: scroll - 80
-	}, 500, 'swing');
+	}
+	 , 500, 'swing');
 }
