@@ -3,10 +3,21 @@ body {
   color: #000;
   background-color: #FFF;
   font-family: 'Oswald', sans-serif;
+  /*max-width: 1200px;*/
 }
+
 
 .container{
 max-width: 960px;
+}
+
+.banner{
+  max-width: 1500px;
+}
+
+.banner-border{
+  width: 100%;
+  background-color: #000;
 }
 
 .center {
@@ -165,12 +176,12 @@ a:active {
 
 .second-big{
   
-  height: 600px;
+  height: 580px;
 
   display:block;
   width: 100%;
   padding: 0;
-    padding-top: 65px;
+  padding-top: 65px;
 
   margin: 0;
     background-image: url("../images/Team(edit).png");
@@ -185,7 +196,7 @@ a:active {
 footer{
   width: 100%;
   padding: 0;
-    overflow: hidden;
+  overflow: hidden;
   height: 65px;
   background-color: #000;
 }
