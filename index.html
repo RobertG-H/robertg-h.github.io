@@ -1,4 +1,4 @@
-<!--Credit to Rishi Goel and Stefan Pleava. I used lots of their website code here: https://rishigoel.github.io/ and http://stefanpleava.com/ to help me unserstand how to implement certain things like a proper nav bar, and scrolling to a section-->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -14,15 +14,16 @@
 
 
 
-      <ul id = "header-nav">
+      <ul id = "header-nav"> <!-- div inside ul needs to be fixed -->
         <div class = container>
            <li id="header-name" onclick="scrollToSection('rgh')">Robert Graham-Hu</li>
-           <li id="navItem" onclick="scrollToSection('about')">About Me</li>
-           <li id="navItem" onclick="scrollToSection('exp')">Experience</li>
-           <li id="navItem" onclick="scrollToSection('projects')">Projects</li>
-           <li id="navItem" onclick="scrollToSection('resume')">Resume</li>
-  
-        </div>
+           <li class="navItem" onclick="scrollToSection('about')">About Me</li>
+           <li class="navItem" onclick="scrollToSection('exp')">Experience</li>
+           <li class="navItem" onclick="scrollToSection('projects')">Projects</li>
+           <li class="navItem" onclick="scrollToSection('resume')">Resume</li>
+         </div>
+
+
      </ul>
 
   <header>
@@ -92,8 +93,7 @@
 
 
 
-          
-
+                   
     
 
 
@@ -104,7 +104,12 @@
 
 
     <footer>
-        <div id="resume" class="resume">
+  
+        <div class = github>
+              <a target="_blank" href="https://github.com/RobertG-H">My Github</a>
+        </div>
+
+         <div id="resume" class="resume" >
             <a target="_blank" href="files/resume.pdf">Resume</a>
         </div>
     </footer>
@@ -117,4 +122,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/html2canvas.js"></script>
+
+  <!--Credit to Rishi Goel and Stefan Pleava. I used lots of their website code here: https://rishigoel.github.io/ and http://stefanpleava.com/ to help me unserstand how to implement certain things like a proper nav bar, and scrolling to a section-->
 </html>

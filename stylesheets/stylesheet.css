@@ -57,7 +57,7 @@ max-width: 960px;
 }
 
 /*about me, experience, projects etc*/
-#navItem {
+.navItem {
     float: left;
     display: block;
     padding-top: 10px;
@@ -68,13 +68,13 @@ max-width: 960px;
 
 
 
-#navItem:hover {
+.navItem:hover {
     color: #aaa;
 }
 
 
 
-#navItem:nth-child(2){
+.navItem:nth-child(2){
 }
 /*
 #navItem:hover {
@@ -94,6 +94,18 @@ max-width: 960px;
     padding-left: 25px;
 }*/
 
+
+
+.github{
+  text-align: center;
+  float: left;
+  right: 0px;
+  margin: auto;
+  display: block;
+  color: #fff;
+}
+
+
 #big-name{
   margin-top: 195px;
   font-size: 75px;
@@ -101,7 +113,6 @@ max-width: 960px;
   color: #fff;
   width: 100%;
   background-color: rgba(0,0,0, 0.65);
-
   }
 
 .intro-big{
@@ -171,6 +182,7 @@ p > a:visited {
 }
 a:visited {
     color: white;
+   text-decoration: none;
 }
 
 
@@ -226,6 +238,9 @@ footer{
   margin-right: 5px;
   margin-bottom: 20px;
 }
+
+
+
 
 .textBox{
   margin-bottom: 20px;
