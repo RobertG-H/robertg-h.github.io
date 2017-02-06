@@ -13,19 +13,20 @@
 <body>
 
 
+<!-- Nav bar -->
+  <ul id = "header-nav"> <!-- div inside ul needs to be fixed -->
+     <div class = container>
+       <li id="header-name" onclick="scrollToSection('rgh')">Robert Graham-Hu</li>
+       <li class="navItem" onclick="scrollToSection('about')">About Me</li>
+       <li class="navItem" onclick="scrollToSection('exp')">Experience</li>
+       <li class="navItem" onclick="scrollToSection('projects')">Projects</li>
+       <li class="navItem" onclick="scrollToSection('contact')">Contact</li>
+       <li class="navItem" onclick="scrollToSection('resume')">Resume</li>
+     </div>
+  </ul>
 
-      <ul id = "header-nav"> <!-- div inside ul needs to be fixed -->
-        <div class = container>
-           <li id="header-name" onclick="scrollToSection('rgh')">Robert Graham-Hu</li>
-           <li class="navItem" onclick="scrollToSection('about')">About Me</li>
-           <li class="navItem" onclick="scrollToSection('exp')">Experience</li>
-           <li class="navItem" onclick="scrollToSection('projects')">Projects</li>
-           <li class="navItem" onclick="scrollToSection('resume')">Resume</li>
-         </div>
-
-
-     </ul>
-
+<!-- header bar -->
+<!-- fix picture size and add some more flair to it-->
   <header>
     <div id="rgh" class="banner-border">
       <div class="banner center">
@@ -38,62 +39,107 @@
 
 
 
-<div id="about" class="container">
-  <div class="row">
-    <div class="text-center">
-      <h2>About Me</h2>
-      <hr class="line">
-    </div>
-    <div class="circle-pic">
-    </div>
-    <p>
-    I am first year student with a passion for leadership and learning new skills. I am currently studying Systems Design Engineering at the University of Waterloo.
-    </p>
-
+  <!-- About me section -->
+  <!-- Change picture
+  <!-- outline passion for education and bigger picture thinking as well as entrepreneurship-->
+  <div id="about" class="container">
+    <div class="row">
+      <div class="text-center">
+        <h2>About Me</h2>
+        <hr class="line">
       </div>
-</div>
-
-    <div class="banner-border">
-      <div class="banner center">
-
-        <div class="second-big">
-             <div id="big-name" class="main-heading">C.R.T. Team 5630</div>
-        </div>
-     </div>
-    </div>
-
-
-     <div class="container">
-  <div id="exp" class="row">
-    <div class="text-center">
-      <h2>Experience</h2>
-      <hr class="line">
-      <h3> Team Lead</h3>
-      <h4> FRC (FIRST Robtics Competition) Team 5630 </h4>
-      <ul>
-       <li> Led team of 20 members and 5 mentors (not all pictured) to fund, design in CAD, build, and program a 100-pound robot that competes in a regional competition in six weeks </li>
-       <li> Grew team from 5 to 20 members by public speaking at promotional events </li>
-       <li> Conducted marketing strategies using skills in GIMP and Microsoft office to approach companies for sponsorship and attract new team members</li>
-       <li> Designed and taught workshops to teach team members critical skills: Java, Git, Solidworks, and design process</li>
-      </ul>
-      <p>Team website:     
-      <a href="http://5630crt.com"> 5630crt.com</a>
+      <div class="circle-pic">
+      </div>
+    
+      <p>
+      I am first year student with a passion for leadership and learning new skills. I am currently studying Systems Design Engineering at the University of Waterloo.
       </p>
+
+    </div>
   </div>
 
 
+  <!-- Second large photo-->
+  <!-- Add another large photo for STEM Learning Lab-->
+  <div class="banner-border">
+    <div class="banner center">
+
+      <div class="second-big">
+           <div id="big-name" class="main-heading">C.R.T. Team 5630</div>
       </div>
-</div>
-
-<p> More to come soon! (Website is work in progress)</p>
-
+   </div>
+  </div>
 
 
 
 
+  <!-- Experience section -->
+  <!-- Fix robotics descirption -->
+  <!-- Add STEM Learning Lab -->
+  <div class="container">
+    <div id="exp" class="row">
+      <div class="text-center">
+        <h2>Experience</h2>
+        <hr class="line">
+        <h3> Team Lead</h3>
+        <h4> FRC (FIRST Robtics Competition) Team 5630 </h4>
+        <ul>
+         <li> Led team of 20 members and 5 mentors (not all pictured) to fund, design in CAD, build, and program a 100-pound robot that competes in a regional competition in six weeks </li>
+         <li> Grew team from 5 to 20 members by public speaking at promotional events </li>
+         <li> Conducted marketing strategies using skills in GIMP and Microsoft office to approach companies for sponsorship and attract new team members</li>
+         <li> Designed and taught workshops to teach team members critical skills: Java, Git, Solidworks, and design process</li>
+        </ul>
+        <p>Team website:     
+        <a href="http://5630crt.com"> 5630crt.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
 
 
-                   
+  <!-- Project section -->
+  <!-- Link to my youtube channel -->
+  <!-- Description of online alias-->
+  <div class="container">
+    <div id="projects" class="row">
+      <div class="text-center">
+        <h2>Projects</h2>
+        <hr class="line">
+        <h3> Youtube </h3>
+        <h4> MUSIC AND VIDEOS </h4>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contact section -->
+  <div class="container">
+    <div id="contact" class="row">
+      <div class="text-center">
+        <h2>Contact Me</h2>
+        <hr class="line">
+        <h3> Email </h3>
+      </div>
+    </div>
+  </div>
+
+
+
+  <p> More to come soon! (Website is a work in progress)</p>
+
+
+
+
+
+
+
+  <footer>
+    <div class = github>
+      <a target="_blank" href="https://github.com/RobertG-H">My Github</a>
+    </div>
+    <div id="resume" class="resume" >
+      <a target="_blank" href="files/resume.pdf">Resume</a>
+    </div>
+  </footer>             
     
 
 
@@ -103,16 +149,7 @@
 </body>
 
 
-    <footer>
-  
-        <div class = github>
-              <a target="_blank" href="https://github.com/RobertG-H">My Github</a>
-        </div>
 
-         <div id="resume" class="resume" >
-            <a target="_blank" href="files/resume.pdf">Resume</a>
-        </div>
-    </footer>
 
 
 
