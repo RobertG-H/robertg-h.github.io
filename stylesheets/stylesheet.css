@@ -42,18 +42,33 @@ a:visited {
   border: 0;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: 18px;
   color: #000;
 }
 
 /* Header */
 
   /* navbar */
+
+
 .navbar-default {
     background-color: #333;
     border:none;
 }
 
+.navlink{
+  color:#FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
 
+
+}
+
+.navlink:hover{
+        color:#C6B600;
+  font-weight: bold;
+}
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -166,7 +181,9 @@ header #branding h1{
   min-height: 200px;
 }
 
-
+.spacerSmall {
+  min-height: 50px;
+}
 
 /* About Me */
 #about{
@@ -222,6 +239,7 @@ header #branding h1{
   margin-bottom: 20px;
   display: block;
   background-image: url("../images/SLL_Logo_Small.png");
+  border:rgba(0,0,0, 0.75) 5px solid;
   background-repeat: no-repeat;
 
 
@@ -256,6 +274,67 @@ header #branding h1{
 } 
 
 
+
+.crt{
+  height: 241px;
+  width: 477px;
+  margin: auto;
+  margin-bottom: 20px;
+  display: block;
+  background-image: url("../images/Team small.jpg");
+  border:rgba(0,0,0, 0.75) 5px solid;
+  background-repeat: no-repeat;
+
+
+}
+
+.crt div {
+  display:none;
+}
+
+.crt:hover div {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0,0,0, 0.65);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+/*Boxes*/
+
+.WeCasual{
+
+  margin-top: 67px;
+}
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes .box{
+  text-align: center;
+  padding: 10px;
+}
+
+#boxes .box img{
+  width:220px;
+
+}
+.box h3{
+  font-weight: bold;
+  font-size: 2em;
+}
+
+
+
+
 /* Contact me */
 
 #contact{
@@ -270,36 +349,46 @@ header #branding h1{
 }
 
 #contact form{
-  float:right;
-  margin-top:15px;
+
+  font-size: 18px;
+  padding: 20px 20px 20px 0px;
+}
+
+#contact input{
+  float:left;
+  color: #000;
+  margin: 15px;
+  width: 300px;
+}
+
+.enterName{
+  padding:4px;
+  height:45px;
+  width:300px;
+  float:left;
+}
+.enterMes{
+    margin: 18px;
+  margin-top: 100px;
+  padding:4px;
+  height: 150px;
+  width: 65%;
+  resize: none;
+  color: #000;
+
+
 }
 
 #contact input[type="email"]{
-  padding:4px;
-  height:25px;
-  width:250px;
-}
-
-
-
-
-/*Boxes*/
-#boxes{
-  margin-top: 20px;
-}
-
-#boxes .box{
-  float:left;
-  text-align: center;
-  width:30%;
-  padding: 10px;
-}
-
-#boxes .box img{
-  width:90px;
 
 }
 
+
+
+
+
+
+/*footer*/
 footer{
   padding:20px;
   color:#fff;
@@ -313,7 +402,20 @@ footer{
 
 /*Size specific things */
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
+  #boxes .box{
+   float: left;
+    width: 33%;
+}
+
+    .enterMes{
+    float:right;
+    margin: 18px;
+  }
+
+}
+
+@media (min-width: 965px) and (max-width: 1200px)  {
 
   .col-lg-4 {
     float: left;
@@ -329,9 +431,19 @@ footer{
   background-image: url("../images/SLL_Logo.png");
   }
 
+  .enterMes{
+    float:right;
+    margin: 18px;
+  }
+
+  #boxes .box{
+   float: left;
+    width: 50%;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 768px) and (max-width: 965px) {
   .col-md-6, .col-md-12{
     float: left;
   }
@@ -343,6 +455,10 @@ footer{
    .col-md-12 {
     width: 100%;
   }
+  #boxes .box{
+    float: left;
+    width: 50%;
+}
 
 }
 

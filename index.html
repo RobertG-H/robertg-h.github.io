@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
           </button>
        <div id="branding" >
-          <h1 ><span class = "highlight">Robert </span>Graham-Hu</h1>
+          <h1 onclick="scrollToSection('showcase')"><span class = "highlight" >Robert </span>Graham-Hu</h1>
       </div>
         </div>
   
@@ -36,11 +36,11 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
           <ul class="nav navbar-nav">
-        <li class = "current"><a href="#">About me</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a target="_blank" href="files/resume.pdf">Resume</a></li>
+            <li onclick="scrollToSection('about')" class = "navlink"><a>About me</a></li>
+            <li onclick="scrollToSection('experience')"><a>Experience</a></li>
+            <li onclick="scrollToSection('projects')"><a>Projects</a></li>
+            <li onclick="scrollToSection('contact')"><a>Contact</a></li>
+            <li><a target="_blank" href="files/resume.pdf">Resume</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -51,7 +51,7 @@
   <section id="showcase">
     <div class = "container">
       <div class = "spacer"></div>
-      <h1>Robert Graham-Hu</h1>
+      <h1 >Robert Graham-Hu</h1>
       <p></p>
     </div>
   </section>
@@ -92,15 +92,30 @@
             <div> STEM Learning Lab </div>
           </a>
           <div class = "job-title">
-            Learning and Technology Integrator
+            Learning and Technology Integrator 
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           </p>
+          </div>
+
+          <a target = "_blank" href="http://canadacrew5630.com/" class = "crt">
+            <div> FRC Team 5630 </div>
+          </a>
+          <div class = "job-title">
+            Team Lead
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           </p>
           </div>
   
     </div>
@@ -108,63 +123,68 @@
 
     <!-- Projects -->
   <section id="projects" class="container">
-      <div class="text-center">
+    <div class="text-center">
         <h2>Projects</h2>
         <hr class="line">
-      </div>
-      <p>
-      I am first year student with a passion for leadership and learning new skills. I am currently studying Systems Design Engineering at the University of Waterloo.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-       <section id = "boxes">
-      <div class = "container">
-        <div class = "box">
-          <img src="./images/Rev 13 Logo Squish Extra.png">
-          <h3>Box 1</h3>
-          <p> MORE WORDS</p>
+    </div>
+      <section id = "boxes">
+        <div class = "container">
+          <div class = "box">
+            <a target = "_blank" href= "https://wecasual.co">
+              <img class = ".img-responsive" src="./images/Rev 13 Logo Squish Extra.png">
+            </a>
+            <h3 class = "WeCasual">WeCasual</h3>
+            <p> A casual Dota2 league! This is a league my brothers and I started to provide a better and more cooperation oriented Dota experience for all players.</p>
+          </div>
+
+          <div class = "box">
+            <a target = "_blank" href= "https://soundcloud.com/user-539625659">
+             <img src="./images/Obreto_O.png"> 
+            </a>
+            <h3 >Obreto</h3>
+            <p> Obreto is my musical and soundcloud alias. In my free time I enjoy playing and composing music. I create electonic music, piano music, and remixes to my favourite songs. Music is produced in Reason.
+            </p>
+          </div>
+
+          <div class = "box">
+            <img src="./images/Rhythm Tapper Logo_draft4.png">
+            <h3>Rhythym Tapper</h3>
+            <p> <span style="font-style: italic;"> (Currently in Development)  </span>An Android app to help practice musical rhythyms! This will help you practice keeping beat with music and playing rhythyms. Developed in Android Studio.</p>
+          </div>
+
         </div>
 
-        <div class = "box">
-          <img src="./images/Obreto_O.png">
-          <h3>Box 1</h3>
-          <p> MORE WORDS</p>
-        </div>
-
-        <div class = "box">
-          <img src="./images/Music note.jpg">
-          <h3>Box 1</h3>
-          <p> MORE WORDS</p>
-        </div>
-
-      </div>
-
-    </section>
-    </section>
+      </section>
+  </section>
 
 
     <!-- Contact me -->
 
     <section id="contact"> <!-- is newsletter in tutorial-->
       <div class = "container">
-        <h1> Contact me </h1>
+        <h1> Contact <span class = "highlight" >me </span><span style="font-size: 12px;font-style: italic;">(Not currently working, sorry!) </span></h1>
+        <div class = "spacerSmall"></div>
         <form>
-          <input type="email" placeholder="Enter email">
-          <button type="submit" class="button_1">Send</button>
+          <div class = "enterName">
+            <input type="text" placeholder="Enter name">
+            <input type="email" placeholder="Enter email">
+          </div>
+
+          <div class = ".col-lg-4">
+            <textarea class = "enterMes" data-validation-required-message="Please enter a message." placeholder="Your Message" required=""></textarea> 
+          </div>
         </form>
+        
+      </div>
+      <div class = "container">
+       <button type="submit" class="button_1">Send</button>
       </div>
     </section>
 
 
 
     <footer>
-    <p>Robert Graham-Hu, 2017</p>
+      <p>Robert Graham-Hu, 2017</p>
 
 
     </footer>
